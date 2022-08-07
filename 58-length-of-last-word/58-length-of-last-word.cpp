@@ -14,7 +14,7 @@ public:
             else
             {
             c++;
-                last = c;
+            last = c;
             }
         }
         

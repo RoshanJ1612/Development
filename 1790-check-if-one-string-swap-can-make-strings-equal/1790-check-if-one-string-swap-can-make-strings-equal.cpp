@@ -13,7 +13,6 @@ public:
      
         int c = 0;
         char c1,c2,c3,c4; 
-        vector<int>ans;
         for(int i = 0; i<s1.length();i++)
         {
             if(s1[i] != s2[i])

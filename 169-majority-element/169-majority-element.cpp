@@ -20,8 +20,8 @@ public:
                     if(count>majority)
                       {
                 
-                    majority = count;
-                    ans = nums[i];
+                        majority = count;
+                        ans = nums[i];
                       }
                    count = 0;
                 }

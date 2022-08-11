@@ -2,23 +2,21 @@ class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums)
     {
-        sort(nums.begin(),nums.end());
-        int n = nums.size();
-           nums.erase(unique(nums.begin(), nums.end()), nums.end());
-     
-        vector<int>ans;
-        for(int i = 1,j = 0; i<=n;i++)
+        vector<int>freq(nums.size()+1,0);
+        for(int i = 0;i<nums.size();i++)
         {
-            if(nums[j] == i)
-            {
-                j++;
-            }
-            else
+            freq[nums[i]]++;
+        }
+        vector<int>ans;
+        
+        for(int i = 1; i<freq.size();i++)
+        {
+            if(freq[i] == 0)
             {
                 ans.push_back(i);
             }
         }
-        
         return ans;
     }
+    
 };

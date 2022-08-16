@@ -5,9 +5,10 @@ public:
         double ans = 1.0;
         bool bFlag = false;
         
-               if(x == 1){
+        if(x == 1){
             return 1;
         }
+        
         if( x != -1 and n == INT_MIN){
             return 0;
         }

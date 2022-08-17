@@ -7,6 +7,12 @@ public:
                 return 0;
             }
         
+            if(haystack.length()==2 && needle.length()==1)
+            {
+                if(haystack[0]==needle[0])return 0;
+                return 1;
+            }
+        
         int j = 0,i = 0;
         for(i = 0; i<haystack.length();i++)
         {

@@ -20,19 +20,10 @@ public:
             c++;
             temp1 = temp1->next;
         }
+            
+        int n = c/2;
         
-        int n = 0;
-        if(c % 2 == 0)
-        {
-            n = (c/2);
-        }
-        else
-        {
-            n  = (c/2);
-        }
         
-        cout<<c<<endl;
-        cout<<n<<endl;
         for(int i = 0; i<n;i++)
         {
             temp2 = temp2->next;

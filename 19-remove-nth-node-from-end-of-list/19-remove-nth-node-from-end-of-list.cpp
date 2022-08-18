@@ -22,8 +22,7 @@ public:
         }
         
         int x = c - n;
-        /*cout<<c<<endl;
-        cout<<x<<endl;*/
+     
         if(x == 0 && c ==1)
         { 
           return NULL;  

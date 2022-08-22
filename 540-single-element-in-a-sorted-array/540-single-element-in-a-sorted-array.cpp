@@ -2,7 +2,7 @@ class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums)
     {
-        map<int,int>m;
+        /*map<int,int>m;
         for(int i = 0; i<nums.size();i++)
         {
             m[nums[i]]++;
@@ -18,5 +18,11 @@ public:
             }
         }
         return ans;
+    }*/
+        
+    int ans = 0;
+    for(auto it : nums)
+    ans ^= it;
+    return ans;
     }
 };
